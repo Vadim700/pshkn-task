@@ -1,0 +1,33 @@
+.main {
+  position: relative;
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+  background-color: #d4d4d4;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: fixed;
+    width: 934px;
+    aspect-ratio: 3.11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(30deg);
+    background-color: #7075f1;
+    border-radius: 150px;
+
+    @media (max-width: 1024px) {
+      width: 90.3%;
+    }
+    @media (max-width: 480px) {
+      content: none;
+    }
+  }
+}
+
+.list {
+  z-index: 1;
+}

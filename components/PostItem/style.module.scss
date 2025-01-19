@@ -1,0 +1,76 @@
+.root {
+	width: 339px;
+	height: 100%;
+	min-height: 234px;
+	padding: 20px 25px 15px;
+	border-radius: 25px;
+	backdrop-filter: blur(30px);
+	box-shadow: 0px 0px 45.9px 0px #00000040;
+	transition: all 0.3s ease 0s;
+	overflow: hidden;
+
+	font: normal 400 12px/1.21 "Inter";
+
+	&:hover {
+		background-color: #fff;
+
+		button {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	&.selected {
+		backdrop-filter: blur(30px);
+		box-shadow: 0px 0px 45.9px 0px #ff2f54;
+	}
+}
+
+.title {
+	margin-bottom: 15px;
+	font-size: 32px;
+	line-height: 1.22;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	&::first-letter:not(span) {
+		text-transform: uppercase;
+	}
+}
+
+.id {
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 24px;
+}
+
+.body {
+	font-size: 12px;
+	line-height: 1.22;
+}
+
+.remove {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 10px;
+	right: 10px;
+	transition: all 0.2s ease 0s;
+
+	border: none;
+	background-color: transparent;
+
+	opacity: 0;
+	visibility: hidden;
+
+	font-size: 20px;
+	cursor: pointer;
+
+	&:hover {
+		color: tomato;
+	}
+}

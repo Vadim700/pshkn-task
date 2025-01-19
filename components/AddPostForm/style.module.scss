@@ -1,0 +1,77 @@
+.root {
+	position: relative;
+}
+
+.close {
+	display: grid;
+	place-items: center;
+
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 10px;
+	right: 10px;
+
+	border: none;
+	background-color: transparent;
+
+	cursor: pointer;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 500px;
+	padding: 40px;
+
+	background-color: #fff;
+
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.input {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	border: 1px solid #000;
+}
+.textarea {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	min-height: 100px;
+	border: 1px solid #000;
+
+	resize: vertical;
+}
+
+.button {
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+
+	border: none;
+	border-radius: 5px;
+	background-color: #7075f1;
+
+	color: white;
+	text-transform: uppercase;
+
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.95;
+	}
+}
+
+.loader {
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
