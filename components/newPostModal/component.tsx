@@ -34,7 +34,7 @@ export const NewPostModal: React.FC<Props> = ({ className, dalay }) => {
 
   return (
     <motion.div
-      className={className}
+      className={styles.root}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.8 }}
