@@ -6,6 +6,7 @@ import { Plus } from 'lucide-react';
 import { AddPostForm } from '../AddPostForm/component';
 import { useLockBodyScroll, useToggle } from 'react-use';
 import { motion } from 'framer-motion';
+import classNames from 'classnames';
 
 interface Props {
   className?: string;
@@ -34,7 +35,7 @@ export const NewPostModal: React.FC<Props> = ({ className, dalay }) => {
 
   return (
     <motion.div
-      className={styles.root}
+      className={classNames(className, styles.root)}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.8 }}
